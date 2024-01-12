@@ -1,12 +1,13 @@
 package project.timeguardalert.infrastructure;
 
+import java.util.List;
+
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
-import project.timeguardalert.application.dto.NotificationResponse;
 
-import java.util.List;
+import project.timeguardalert.application.dto.NotificationResponse;
 
 @FeignClient(name = "naverNotification", url = "https://api.booking.naver.com")
 public interface NotificationFeignClient {
