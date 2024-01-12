@@ -104,10 +104,13 @@ public class TelegramService extends TelegramLongPollingBot {
 					"/items/" +
 					"" + userInputData.getPlaceOptionNumber() +
 					"?area=bmp&service-target=map-pc");
+			log.info("메시지 발송 완료");
+			stopScheduler();
+			sendNotification("취소 예약 알림이 완료되었습니다!");
 		}
 	}
 
-	public void cancelSchedule() {
+	public void stopScheduler() {
 		if (scheduledFuture != null && !scheduledFuture.isCancelled()) {
 			scheduledFuture.cancel(true);
 			log.info("스케줄러가 중지되었습니다.");
@@ -121,7 +124,7 @@ public class TelegramService extends TelegramLongPollingBot {
 	}
 
 	private void cancelWaiting() {
-		cancelSchedule();
+		stopScheduler();
 		sendNotification("대기가 취소되었습니다.");
 	}
 
