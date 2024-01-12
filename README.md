@@ -33,6 +33,7 @@
 <img width="1425" alt="스크린샷 2024-01-12 오후 4 12 47" src="https://github.com/hongxeob/TimeGuard_Alert/assets/97447334/1d8c1af2-b9d2-40d8-80e0-11f033255895">
 - 예약 화면으로 이동한 후 URL에서 해당 숫자를 찾습니다.
  <img width="796" alt="스크린샷 2024-01-12 오후 4 12 34" src="https://github.com/hongxeob/TimeGuard_Alert/assets/97447334/88eeebb0-5ae5-4817-a237-6f68b9e6b8b0">
+
 - 텔레그램 봇의 채팅창에 아래와 같은 요청을 보냅니다.
   - `/대기 179885,3807085,2024-01-01T12:00:00,2024-01-01T13:00:00`<br>
   - 이 명령어는 다음과 같은 정보를 사용하여 예약 취소 알림을 요청합니다.
