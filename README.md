@@ -11,6 +11,7 @@
 ## 💻 주요 기술 스택
 - Java 17
 - Spring Boot 2.7.14
+- Spring Cloud OpenFeign
 - Telegram Bots API
 
 ## 빌드 및 실행
